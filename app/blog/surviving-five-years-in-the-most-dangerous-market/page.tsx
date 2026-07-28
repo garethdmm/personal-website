@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ListenLater from '@/app/components/ListenLater';
 
 export const metadata = {
   title: 'Thriving in the presence of risk — Crypto 2013–17 — Gareth MacLeod',
@@ -29,6 +30,8 @@ export default function SurvivingFiveYearsPost() {
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">August 2019</p>
 
         <hr />
+
+        <ListenLater slug="surviving-five-years-in-the-most-dangerous-market" />
 
         <p>
           The goal of Tinker was to build the Goldman Sachs of the blockchain-future, and our thesis was

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ListenLater from '@/app/components/ListenLater';
 
 export const metadata = {
   title: 'How to feel when your startup feels easy — Gareth MacLeod',
@@ -29,6 +30,8 @@ export default function HowToFeelPost() {
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">March 2024</p>
 
         <hr />
+
+        <ListenLater slug="how-to-feel-when-your-startup-feels-easy" />
 
         <p>
           I did something hard once: I took my startup from zero to $1m in daily volume in 4 months.

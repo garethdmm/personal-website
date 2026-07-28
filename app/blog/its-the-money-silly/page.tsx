@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ListenLater from '@/app/components/ListenLater';
 
 export const metadata = {
   title: "It's the money, silly — Gareth MacLeod",
@@ -29,6 +30,8 @@ export default function ItsTheMoneySillyPost() {
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">November 2025</p>
 
         <hr />
+
+        <ListenLater slug="its-the-money-silly" />
 
         <p>
           People have been talking about the shortcomings of the Canadian tech startup world my whole professional life, with Silicon Valley the bar against which we measure ourselves. With renewed heat on this topic in the tariff era, two problems in particular have received a lot of attention: our <em>unambitious</em> culture, and our constant leakage of good talent <em>to</em> Silicon Valley. Both of these are worth discussing, but as causal explanations for our differences to California, they are weak and incomplete. What is missing from this framework is money.

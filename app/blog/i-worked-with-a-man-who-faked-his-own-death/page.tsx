@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ListenLater from '@/app/components/ListenLater';
 
 export const metadata = {
   title: 'I worked with a man who faked his own death — Gareth MacLeod',
@@ -29,6 +30,8 @@ export default function FakedDeathPost() {
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">June 2024</p>
 
         <hr />
+
+        <ListenLater slug="i-worked-with-a-man-who-faked-his-own-death" />
 
         <p>
           I only spoke with Gerald Cotton on the phone, but we had substantial business dealings with him for a time. He ran one of the Canadian exchanges, which had low volume but highly arbitrageable orders, so we made a tidy profit trading there, and added substantial liquidity to their books, so it was a profitable relationship for both parties.
