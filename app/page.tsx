@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { getPostAudio } from '@/lib/audio';
+import { posts } from '@/lib/posts';
 
 export default function Home() {
   return (
@@ -37,30 +39,31 @@ export default function Home() {
             Writing
           </h2>
           <ul className="list-none p-0 m-0">
-            <li className="mb-3 flex justify-between items-baseline gap-4">
-              <Link href="/blog/its-the-money-silly" className="flex-1">
-                It's the money, silly
-              </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Nov 2025</span>
-            </li>
-            <li className="mb-3 flex justify-between items-baseline gap-4">
-              <Link href="/blog/i-worked-with-a-man-who-faked-his-own-death" className="flex-1">
-                I worked with a man who faked his own death
-              </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Jun 2024</span>
-            </li>
-            <li className="mb-3 flex justify-between items-baseline gap-4">
-              <Link href="/blog/how-to-feel-when-your-startup-feels-easy" className="flex-1">
-                How to feel when your startup feels easy
-              </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Mar 2024</span>
-            </li>
-            <li className="mb-3 flex justify-between items-baseline gap-4">
-              <Link href="/blog/surviving-five-years-in-the-most-dangerous-market" className="flex-1">
-                Thriving in the presence of risk — Crypto 2013–17
-              </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Aug 2019</span>
-            </li>
+            {posts.map((post) => {
+              const audio = getPostAudio(post.slug);
+
+              return (
+                <li
+                  className="mb-3 flex items-baseline justify-between gap-4"
+                  key={post.slug}
+                >
+                  <Link href={`/blog/${post.slug}`} className="flex-1">
+                    {post.homeTitle}
+                    {audio ? (
+                      <span className="ml-2 whitespace-nowrap font-sans text-[0.7rem] uppercase tracking-[0.08em] text-[#6b7f9c]">
+                        Audio · listen later
+                      </span>
+                    ) : null}
+                  </Link>
+                  <time
+                    className="shrink-0 font-sans text-[0.82rem] text-[#888]"
+                    dateTime={post.published}
+                  >
+                    {post.homeDateLabel}
+                  </time>
+                </li>
+              );
+            })}
           </ul>
         </section>
       </main>

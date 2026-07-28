@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { PostAudio } from '@/app/components/PostAudio';
+import { getPost } from '@/lib/posts';
+
+const post = getPost('i-worked-with-a-man-who-faked-his-own-death');
 
 export const metadata = {
-  title: 'I worked with a man who faked his own death — Gareth MacLeod',
+  title: `${post.title} — Gareth MacLeod`,
 };
 
 export default function FakedDeathPost() {
@@ -24,12 +28,17 @@ export default function FakedDeathPost() {
         </Link>
 
         <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
-          I worked with a man who faked his own death
+          {post.title}
         </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">June 2024</p>
+        <p className="font-sans text-[0.82rem] text-[#888] mb-8">
+          <time dateTime={post.published}>{post.dateLabel}</time>
+        </p>
 
         <hr />
 
+        <PostAudio slug={post.slug} />
+
+        <article data-narration-source>
         <p>
           I only spoke with Gerald Cotton on the phone, but we had substantial business dealings with him for a time. He ran one of the Canadian exchanges, which had low volume but highly arbitrageable orders, so we made a tidy profit trading there, and added substantial liquidity to their books, so it was a profitable relationship for both parties.
         </p>
@@ -96,6 +105,7 @@ export default function FakedDeathPost() {
         <p>
           I wonder what would happen if Gerald suddenly emerged from rural Asia, ready to face the music. Whether that would be worth something to him, spiritually. Maybe, maybe not.
         </p>
+        </article>
       </main>
     </div>
   );

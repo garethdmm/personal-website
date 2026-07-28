@@ -1,0 +1,120 @@
+name: Generate narrated posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: Post to narrate (all re-generates and re-bills every post)
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - its-the-money-silly
+          - i-worked-with-a-man-who-faked-his-own-death
+          - how-to-feel-when-your-startup-feels-easy
+          - surviving-five-years-in-the-most-dangerous-market
+      confirm_cost:
+        description: I understand this sends the article text to ElevenLabs and incurs TTS usage
+        required: true
+        default: false
+        type: boolean
+      confirm_publication:
+        description: I approve pushing this synthetic voice audio to a public GitHub branch
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  narrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Confirm billable generation
+        if: ${{ !inputs.confirm_cost || !inputs.confirm_publication }}
+        run: |
+          echo "::error::Re-run with both cost/data-sharing and public-voice confirmations checked."
+          exit 1
+
+      - name: Require a branch ref
+        if: ${{ github.ref_type != 'branch' }}
+        run: |
+          echo "::error::Run this workflow from a branch, not a tag."
+          exit 1
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install audio tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes ffmpeg
+
+      - name: Test extraction and chunking
+        run: npm test
+
+      - name: Generate narration
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+          ELEVENLABS_MODEL_ID: ${{ vars.ELEVENLABS_MODEL_ID || 'eleven_multilingual_v2' }}
+        run: npm run narrate -- --post "${{ inputs.post }}"
+
+      - name: Validate static export with generated audio
+        run: npm run build
+
+      - name: Commit generated assets to a review branch
+        id: commit
+        env:
+          BASE_BRANCH: ${{ github.ref_name }}
+        run: |
+          branch="audio/narration-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch --create "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/generated/audio-manifest.json public/audio
+          git commit -m "Generate narrated post audio"
+          git push --set-upstream origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - name: Open a draft review PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_BRANCH: ${{ github.ref_name }}
+          HEAD_BRANCH: ${{ steps.commit.outputs.branch }}
+          POST: ${{ inputs.post }}
+        run: |
+          body_file="$(mktemp)"
+          {
+            echo "## Generated narration"
+            echo
+            echo "This automated draft contains the generated MP3 file(s) and the matching static audio manifest for \`$POST\`."
+            echo
+            echo "Before merging:"
+            echo
+            echo "- Listen through the full recording for pronunciation, pacing, missing text, and artifacts at chunk boundaries."
+            echo "- Confirm Gareth still wants to link this already-public branch asset from the live site."
+            echo "- Check the generated file size and ElevenLabs usage."
+            echo
+            echo "The website exposes the player and download link only after this PR is merged. Because this is a public repository, the raw branch asset became public when the workflow pushed it."
+          } > "$body_file"
+          gh pr create \
+            --draft \
+            --base "$BASE_BRANCH" \
+            --head "$HEAD_BRANCH" \
+            --title "Add generated narration for $POST" \
+            --body-file "$body_file"
