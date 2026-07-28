@@ -63,3 +63,167 @@ p {
   margin-top: 0;
   margin-bottom: 1.1rem;
 }
+
+.listen-later-note {
+  border-left: 3px solid #4a6fa5;
+  background: #f7f9fc;
+  margin: 0 0 2rem;
+  padding: 0.9rem 1rem;
+}
+
+.listen-later-note p:last-child {
+  margin-bottom: 0;
+}
+
+.listen-later-title {
+  color: #4a6fa5;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.listen-later-copy {
+  color: #444;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.audio-list-badge {
+  border: 1px solid #b9c9dc;
+  border-radius: 999px;
+  color: #4a6fa5;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-right: 0.35rem;
+  padding: 0.08rem 0.4rem;
+  text-transform: uppercase;
+}
+
+.audio-takeaway {
+  background: #f7f9fc;
+  border: 1px solid #d8e1ec;
+  border-left: 3px solid #4a6fa5;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 1.6rem 0 2rem;
+  padding: 1rem 1.1rem 0.85rem;
+}
+
+.audio-takeaway-unavailable {
+  background: #fafafa;
+  border-color: #e1e1e1;
+  border-left-color: #9ca9b9;
+}
+
+.audio-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.audio-eyebrow {
+  color: #2f578b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.audio-duration {
+  color: #777;
+  flex-shrink: 0;
+  font-size: 0.76rem;
+}
+
+.audio-description {
+  color: #444;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin-bottom: 0.8rem;
+}
+
+.audio-player {
+  display: block;
+  height: 42px;
+  margin: 0.35rem 0 0.9rem;
+  width: 100%;
+}
+
+.audio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.audio-action {
+  align-items: center;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #aebed1;
+  border-radius: 3px;
+  color: #3f6492;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.2;
+  min-height: 2.15rem;
+  padding: 0.45rem 0.65rem;
+  text-decoration: none;
+}
+
+.audio-action:hover {
+  background: #eef3f8;
+  text-decoration: none;
+}
+
+.audio-action:focus-visible {
+  outline: 2px solid #4a6fa5;
+  outline-offset: 2px;
+}
+
+.audio-action:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.audio-action-primary {
+  background: #4a6fa5;
+  border-color: #4a6fa5;
+  color: #fff;
+}
+
+.audio-action-primary:hover {
+  background: #3e608e;
+}
+
+.audio-note {
+  color: #777;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  margin: 0.75rem 0 0;
+}
+
+.audio-status {
+  color: #355a87;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0.25rem 0 0;
+  min-height: 1em;
+}
+
+@media (max-width: 480px) {
+  .audio-action {
+    flex: 1 1 calc(50% - 0.45rem);
+  }
+}

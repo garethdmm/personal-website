@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { audioPosts, hasPublishedAudio } from './audio-posts';
 
 export default function Home() {
   return (
@@ -31,6 +32,15 @@ export default function Home() {
 
         <hr />
 
+        <aside className="listen-later-note" aria-labelledby="listen-later-title">
+          <p className="listen-later-title" id="listen-later-title">Listen later</p>
+          <p className="listen-later-copy">
+            {hasPublishedAudio
+              ? 'Take an essay on a walk: listen here, download the MP3, or send it to another device.'
+              : 'Audio editions are being recorded. Soon you will be able to listen here, download the MP3, or send an essay to another device.'}
+          </p>
+        </aside>
+
         {/* Writing */}
         <section>
           <h2 className="text-base font-sans font-semibold uppercase tracking-[0.06em] text-[#888] mt-0">
@@ -41,25 +51,37 @@ export default function Home() {
               <Link href="/blog/its-the-money-silly" className="flex-1">
                 It's the money, silly
               </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Nov 2025</span>
+              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">
+                {audioPosts['its-the-money-silly'].src && <span className="audio-list-badge">Audio</span>}
+                Nov 2025
+              </span>
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-4">
               <Link href="/blog/i-worked-with-a-man-who-faked-his-own-death" className="flex-1">
                 I worked with a man who faked his own death
               </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Jun 2024</span>
+              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">
+                {audioPosts['i-worked-with-a-man-who-faked-his-own-death'].src && <span className="audio-list-badge">Audio</span>}
+                Jun 2024
+              </span>
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-4">
               <Link href="/blog/how-to-feel-when-your-startup-feels-easy" className="flex-1">
                 How to feel when your startup feels easy
               </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Mar 2024</span>
+              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">
+                {audioPosts['how-to-feel-when-your-startup-feels-easy'].src && <span className="audio-list-badge">Audio</span>}
+                Mar 2024
+              </span>
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-4">
               <Link href="/blog/surviving-five-years-in-the-most-dangerous-market" className="flex-1">
                 Thriving in the presence of risk — Crypto 2013–17
               </Link>
-              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">Aug 2019</span>
+              <span className="font-sans text-[0.82rem] text-[#888] shrink-0">
+                {audioPosts['surviving-five-years-in-the-most-dangerous-market'].src && <span className="audio-list-badge">Audio</span>}
+                Aug 2019
+              </span>
             </li>
           </ul>
         </section>
