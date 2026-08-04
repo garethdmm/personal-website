@@ -31,7 +31,7 @@ export default function FakedDeathPost() {
         <hr />
 
         <p>
-          I only spoke with Gerald Cotton on the phone, but we had substantial business dealings with him for a time. He ran one of the Canadian exchanges, which had low volume but highly arbitrageable orders, so we made a tidy profit trading there, and added substantial liquidity to their books, so it was a profitable relationship for both parties.
+          I only spoke with Gerald Cotten on the phone, but we had substantial business dealings with him for a time. He ran one of the Canadian exchanges, which had low volume but highly arbitrageable orders, so we made a tidy profit trading there, and added substantial liquidity to their books, so it was a profitable relationship for both parties.
         </p>
 
         <p>
@@ -53,7 +53,7 @@ export default function FakedDeathPost() {
           <li className="mb-4">This put Quadriga in a net-short position against bitcoin. They had debts denominated in bitcoin, but did not have the bitcoin assets to redeem them. This meant that in order to redeem those debts, they would have to buy bitcoin at its current market price using their fiat cash on hand.</li>
           <li className="mb-4">The price of bitcoin over these years went way up. Eventually, Quadriga was sitting on an unrealized loss of hundreds of millions of dollars.</li>
           <li className="mb-4">In the fall of 2018, Gerald married his fiancé in Canada, wrote and signed a will, and then took a trip to India.</li>
-          <li className="mb-4">Weeks after signing this will, a death certificate for Gerald is issued in Jaipur, a small city in north-west India near the border with Pakistan.</li>
+          <li className="mb-4">Weeks after signing this will, a death certificate for Gerald is issued in Jaipur, a city in north-west India near the border with Pakistan.</li>
           <li>Quadriga's other employees realize the severity of the situation they are in, and that they have no access to customer deposits (even the ones that still remain). They declare bankruptcy and contact the authorities.</li>
         </ol>
 
