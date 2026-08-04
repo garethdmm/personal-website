@@ -6,29 +6,22 @@ export const metadata = {
 
 export default function SurvivingFiveYearsPost() {
   return (
-    <div className="max-w-[680px] mx-auto px-6 pt-12 pb-16">
+    <div className="max-w-[34em] mx-auto px-6 pt-20">
 
-      {/* Header */}
-      <header className="flex items-baseline justify-between mb-14">
-        <Link href="/" className="font-sans font-semibold text-base text-[#1a1a1a] no-underline">
+      {/* Running head */}
+      <header className="mb-14">
+        <Link href="/" className="caps no-underline text-[0.85rem]">
           Gareth MacLeod
         </Link>
-        <nav className="font-sans text-[0.85rem]">
-          <Link href="/" className="text-[#555] ml-5 hover:text-accent hover:no-underline">Writing</Link>
-        </nav>
       </header>
 
       <main>
-        <Link href="/" className="font-sans text-[0.85rem] text-[#888] inline-block mb-8">
-          ← Back
-        </Link>
-
-        <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
+        <h1 className="mt-0 mb-1 text-[1.45rem] leading-[1.25] text-balance">
           Thriving in the presence of risk — Crypto 2013–17
         </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">August 2019</p>
+        <p className="m-0 italic">August 2019</p>
 
-        <hr />
+        <div className="fleuron" aria-hidden="true">&#10086;</div>
 
         <p>
           The goal of Tinker was to build the Goldman Sachs of the blockchain-future, and our thesis was
@@ -109,7 +102,7 @@ export default function SurvivingFiveYearsPost() {
           up with a quick summary:
         </p>
 
-        <blockquote className="border-l-[3px] border-[#ddd] my-7 pl-5 text-[#444]">
+        <blockquote className="my-7 mx-0 pl-6 italic">
           <p className="mt-0 mx-0 mb-3">
             In any domain that contains extreme events, it is a mistake to bank your survival on your
             ability to precisely predict and avoid those events. Our knowledge of the world is imperfect,
@@ -131,7 +124,7 @@ export default function SurvivingFiveYearsPost() {
           had a mantra it would have been this:
         </p>
 
-        <p className="text-center italic font-semibold my-8 text-[1.05rem]">
+        <p className="text-center italic my-8">
           Expect the worst to happen. Plan how to survive it.
         </p>
 
@@ -151,7 +144,7 @@ export default function SurvivingFiveYearsPost() {
 
         <p>Here are two stories about specific threats we faced and how we survived when disaster struck.</p>
 
-        <h2 className="text-[1.2rem] mt-10 mb-3">
+        <h2 className="caps text-[0.85rem] mt-12 mb-4">
           Case Study I: The day a bug almost gave away all our money
         </h2>
 
@@ -192,7 +185,7 @@ export default function SurvivingFiveYearsPost() {
           wasn't a near miss. We were just prepared.
         </p>
 
-        <h2 className="text-[1.2rem] mt-10 mb-3">
+        <h2 className="caps text-[0.85rem] mt-12 mb-4">
           Case Study II: Trusting people you don&apos;t trust
         </h2>
 
@@ -275,7 +268,7 @@ export default function SurvivingFiveYearsPost() {
           likely in the dozens.
         </p>
 
-        <h2 className="text-[1.2rem] mt-10 mb-3">
+        <h2 className="caps text-[0.85rem] mt-12 mb-4">
           Details &lt; Approach &lt; Understanding
         </h2>
 

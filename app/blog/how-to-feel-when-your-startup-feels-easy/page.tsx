@@ -6,29 +6,22 @@ export const metadata = {
 
 export default function HowToFeelPost() {
   return (
-    <div className="max-w-[680px] mx-auto px-6 pt-12 pb-16">
+    <div className="max-w-[34em] mx-auto px-6 pt-20">
 
-      {/* Header */}
-      <header className="flex items-baseline justify-between mb-14">
-        <Link href="/" className="font-sans font-semibold text-base text-[#1a1a1a] no-underline">
+      {/* Running head */}
+      <header className="mb-14">
+        <Link href="/" className="caps no-underline text-[0.85rem]">
           Gareth MacLeod
         </Link>
-        <nav className="font-sans text-[0.85rem]">
-          <Link href="/" className="text-[#555] ml-5 hover:text-accent hover:no-underline">Writing</Link>
-        </nav>
       </header>
 
       <main>
-        <Link href="/" className="font-sans text-[0.85rem] text-[#888] inline-block mb-8">
-          ← Back
-        </Link>
-
-        <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
+        <h1 className="mt-0 mb-1 text-[1.45rem] leading-[1.25] text-balance">
           How to feel when your startup feels easy
         </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">March 2024</p>
+        <p className="m-0 italic">March 2024</p>
 
-        <hr />
+        <div className="fleuron" aria-hidden="true">&#10086;</div>
 
         <p>
           I did something hard once: I took my startup from zero to $1m in daily volume in 4 months.
