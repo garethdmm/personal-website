@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { PostAudio } from '@/app/components/PostAudio';
+import { getPost } from '@/lib/posts';
+
+const post = getPost('surviving-five-years-in-the-most-dangerous-market');
 
 export const metadata = {
-  title: 'Thriving in the presence of risk — Crypto 2013–17 — Gareth MacLeod',
+  title: `${post.title} — Gareth MacLeod`,
 };
 
 export default function SurvivingFiveYearsPost() {
@@ -24,12 +28,17 @@ export default function SurvivingFiveYearsPost() {
         </Link>
 
         <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
-          Thriving in the presence of risk — Crypto 2013–17
+          {post.title}
         </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">August 2019</p>
+        <p className="font-sans text-[0.82rem] text-[#888] mb-8">
+          <time dateTime={post.published}>{post.dateLabel}</time>
+        </p>
 
         <hr />
 
+        <PostAudio slug={post.slug} />
+
+        <article data-narration-source>
         <p>
           The goal of Tinker was to build the Goldman Sachs of the blockchain-future, and our thesis was
           good. Granting that cryptocurrencies would be the next medium of finance, we'd start out with an
@@ -306,6 +315,7 @@ export default function SurvivingFiveYearsPost() {
           was why the project was worth doing. My best wishes for you, reader, are that you find many risks
           worth taking, and understand them well.
         </p>
+        </article>
       </main>
     </div>
   );

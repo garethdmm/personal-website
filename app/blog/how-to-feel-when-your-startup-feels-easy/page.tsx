@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { PostAudio } from '@/app/components/PostAudio';
+import { getPost } from '@/lib/posts';
+
+const post = getPost('how-to-feel-when-your-startup-feels-easy');
 
 export const metadata = {
-  title: 'How to feel when your startup feels easy — Gareth MacLeod',
+  title: `${post.title} — Gareth MacLeod`,
 };
 
 export default function HowToFeelPost() {
@@ -24,12 +28,17 @@ export default function HowToFeelPost() {
         </Link>
 
         <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
-          How to feel when your startup feels easy
+          {post.title}
         </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">March 2024</p>
+        <p className="font-sans text-[0.82rem] text-[#888] mb-8">
+          <time dateTime={post.published}>{post.dateLabel}</time>
+        </p>
 
         <hr />
 
+        <PostAudio slug={post.slug} />
+
+        <article data-narration-source>
         <p>
           I did something hard once: I took my startup from zero to $1m in daily volume in 4 months.
           Something has bothered me ever since: it felt easy.
@@ -124,6 +133,7 @@ export default function HowToFeelPost() {
         <p>
           Most importantly, consider: maybe the hard thing you've been thinking of is easier than you think.
         </p>
+        </article>
       </main>
     </div>
   );

@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { PostAudio } from '@/app/components/PostAudio';
+import { getPost } from '@/lib/posts';
+
+const post = getPost('its-the-money-silly');
 
 export const metadata = {
-  title: "It's the money, silly — Gareth MacLeod",
+  title: `${post.title} — Gareth MacLeod`,
 };
 
 export default function ItsTheMoneySillyPost() {
@@ -24,12 +28,17 @@ export default function ItsTheMoneySillyPost() {
         </Link>
 
         <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
-          It's the money, silly
+          {post.title}
         </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">November 2025</p>
+        <p className="font-sans text-[0.82rem] text-[#888] mb-8">
+          <time dateTime={post.published}>{post.dateLabel}</time>
+        </p>
 
         <hr />
 
+        <PostAudio slug={post.slug} />
+
+        <article data-narration-source>
         <p>
           People have been talking about the shortcomings of the Canadian tech startup world my whole professional life, with Silicon Valley the bar against which we measure ourselves. With renewed heat on this topic in the tariff era, two problems in particular have received a lot of attention: our <em>unambitious</em> culture, and our constant leakage of good talent <em>to</em> Silicon Valley. Both of these are worth discussing, but as causal explanations for our differences to California, they are weak and incomplete. What is missing from this framework is money.
         </p>
@@ -61,6 +70,7 @@ export default function ItsTheMoneySillyPost() {
         <p>
           There is good news in this formulation. Although we are 50 multiples away from Silicon Valley in absolute dollars, we are only 4 times away in capital density. If we increase the size of our industry only 14% annually, we can make up half the difference in only five years, or the whole difference with 30%. It would be well worth the time for us to think about what circumstances to cause this.
         </p>
+        </article>
       </main>
     </div>
   );
