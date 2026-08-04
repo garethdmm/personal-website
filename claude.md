@@ -17,10 +17,9 @@ medium of unstyled html that could have been written in 1995. A great example of
 The Bitter Lesson by Richard Sutton http://www.incompleteideas.net/IncIdeas/BitterLesson.html.
 
 We should let the content, and the author's own achievements, speak for themselves. We
-have nothing to prove, least-wise through dramatic flourishes or ornamentation. Well,
-let me take part of that back; the author *wishes to appear as if* they have nothing to
-prove. In fact they wish greatly for more validation, appreciation, and influence; but
-let's keep that between us, ok?
+have nothing to prove. However, the author is not above a tasteful flourish here and there,
+for the dual purposes of self-satisfaction (the author does appreciate beauty and design)
+and to hint to the user that this minimalism is a choice.
 
 ## Tooling
 

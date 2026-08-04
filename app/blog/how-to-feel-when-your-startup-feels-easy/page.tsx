@@ -1,34 +1,14 @@
-import Link from 'next/link';
-
 export const metadata = {
   title: 'How to feel when your startup feels easy — Gareth MacLeod',
 };
 
 export default function HowToFeelPost() {
   return (
-    <div className="max-w-[680px] mx-auto px-6 pt-12 pb-16">
+    <main>
+        <h1>How to feel when your startup feels easy</h1>
+        <p>March 2024</p>
 
-      {/* Header */}
-      <header className="flex items-baseline justify-between mb-14">
-        <Link href="/" className="font-sans font-semibold text-base text-[#1a1a1a] no-underline">
-          Gareth MacLeod
-        </Link>
-        <nav className="font-sans text-[0.85rem]">
-          <Link href="/" className="text-[#555] ml-5 hover:text-accent hover:no-underline">Writing</Link>
-        </nav>
-      </header>
-
-      <main>
-        <Link href="/" className="font-sans text-[0.85rem] text-[#888] inline-block mb-8">
-          ← Back
-        </Link>
-
-        <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
-          How to feel when your startup feels easy
-        </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">March 2024</p>
-
-        <hr />
+        <p className="asterism">⁂</p>
 
         <p>
           I did something hard once: I took my startup from zero to $1m in daily volume in 4 months.
@@ -124,7 +104,6 @@ export default function HowToFeelPost() {
         <p>
           Most importantly, consider: maybe the hard thing you've been thinking of is easier than you think.
         </p>
-      </main>
-    </div>
+    </main>
   );
 }

@@ -1,34 +1,14 @@
-import Link from 'next/link';
-
 export const metadata = {
   title: 'Thriving in the presence of risk — Crypto 2013–17 — Gareth MacLeod',
 };
 
 export default function SurvivingFiveYearsPost() {
   return (
-    <div className="max-w-[680px] mx-auto px-6 pt-12 pb-16">
+    <main>
+        <h1>Thriving in the presence of risk — Crypto 2013–17</h1>
+        <p>August 2019</p>
 
-      {/* Header */}
-      <header className="flex items-baseline justify-between mb-14">
-        <Link href="/" className="font-sans font-semibold text-base text-[#1a1a1a] no-underline">
-          Gareth MacLeod
-        </Link>
-        <nav className="font-sans text-[0.85rem]">
-          <Link href="/" className="text-[#555] ml-5 hover:text-accent hover:no-underline">Writing</Link>
-        </nav>
-      </header>
-
-      <main>
-        <Link href="/" className="font-sans text-[0.85rem] text-[#888] inline-block mb-8">
-          ← Back
-        </Link>
-
-        <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
-          Thriving in the presence of risk — Crypto 2013–17
-        </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">August 2019</p>
-
-        <hr />
+        <p className="asterism">⁂</p>
 
         <p>
           The goal of Tinker was to build the Goldman Sachs of the blockchain-future, and our thesis was
@@ -306,7 +286,6 @@ export default function SurvivingFiveYearsPost() {
           was why the project was worth doing. My best wishes for you, reader, are that you find many risks
           worth taking, and understand them well.
         </p>
-      </main>
-    </div>
+    </main>
   );
 }

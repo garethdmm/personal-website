@@ -1,34 +1,14 @@
-import Link from 'next/link';
-
 export const metadata = {
   title: 'I worked with a man who faked his own death — Gareth MacLeod',
 };
 
 export default function FakedDeathPost() {
   return (
-    <div className="max-w-[680px] mx-auto px-6 pt-12 pb-16">
+    <main>
+        <h1>I worked with a man who faked his own death</h1>
+        <p>June 2024</p>
 
-      {/* Header */}
-      <header className="flex items-baseline justify-between mb-14">
-        <Link href="/" className="font-sans font-semibold text-base text-[#1a1a1a] no-underline">
-          Gareth MacLeod
-        </Link>
-        <nav className="font-sans text-[0.85rem]">
-          <Link href="/" className="text-[#555] ml-5 hover:text-accent hover:no-underline">Writing</Link>
-        </nav>
-      </header>
-
-      <main>
-        <Link href="/" className="font-sans text-[0.85rem] text-[#888] inline-block mb-8">
-          ← Back
-        </Link>
-
-        <h1 className="mt-0 text-[1.75rem] leading-tight mb-[0.4rem]">
-          I worked with a man who faked his own death
-        </h1>
-        <p className="font-sans text-[0.82rem] text-[#888] mb-8">June 2024</p>
-
-        <hr />
+        <p className="asterism">⁂</p>
 
         <p>
           I only spoke with Gerald Cotton on the phone, but we had substantial business dealings with him for a time. He ran one of the Canadian exchanges, which had low volume but highly arbitrageable orders, so we made a tidy profit trading there, and added substantial liquidity to their books, so it was a profitable relationship for both parties.
@@ -96,7 +76,6 @@ export default function FakedDeathPost() {
         <p>
           I wonder what would happen if Gerald suddenly emerged from rural Asia, ready to face the music. Whether that would be worth something to him, spiritually. Maybe, maybe not.
         </p>
-      </main>
-    </div>
+    </main>
   );
 }
