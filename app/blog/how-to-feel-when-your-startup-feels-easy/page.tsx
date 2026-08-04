@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import TakeWithYou from '../../components/TakeWithYou';
+import { audioPosts } from '../../audio-posts';
 
 export const metadata = {
   title: 'How to feel when your startup feels easy — Gareth MacLeod',
@@ -27,6 +29,8 @@ export default function HowToFeelPost() {
           How to feel when your startup feels easy
         </h1>
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">March 2024</p>
+
+        <TakeWithYou audio={audioPosts['how-to-feel-when-your-startup-feels-easy']} />
 
         <hr />
 

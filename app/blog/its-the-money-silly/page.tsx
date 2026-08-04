@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import TakeWithYou from '../../components/TakeWithYou';
+import { audioPosts } from '../../audio-posts';
 
 export const metadata = {
   title: "It's the money, silly — Gareth MacLeod",
@@ -27,6 +29,8 @@ export default function ItsTheMoneySillyPost() {
           It's the money, silly
         </h1>
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">November 2025</p>
+
+        <TakeWithYou audio={audioPosts['its-the-money-silly']} />
 
         <hr />
 

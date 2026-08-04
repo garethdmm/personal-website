@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import TakeWithYou from '../../components/TakeWithYou';
+import { audioPosts } from '../../audio-posts';
 
 export const metadata = {
   title: 'I worked with a man who faked his own death — Gareth MacLeod',
@@ -27,6 +29,8 @@ export default function FakedDeathPost() {
           I worked with a man who faked his own death
         </h1>
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">June 2024</p>
+
+        <TakeWithYou audio={audioPosts['i-worked-with-a-man-who-faked-his-own-death']} />
 
         <hr />
 

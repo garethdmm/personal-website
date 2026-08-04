@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import TakeWithYou from '../../components/TakeWithYou';
+import { audioPosts } from '../../audio-posts';
 
 export const metadata = {
   title: 'Thriving in the presence of risk — Crypto 2013–17 — Gareth MacLeod',
@@ -27,6 +29,8 @@ export default function SurvivingFiveYearsPost() {
           Thriving in the presence of risk — Crypto 2013–17
         </h1>
         <p className="font-sans text-[0.82rem] text-[#888] mb-8">August 2019</p>
+
+        <TakeWithYou audio={audioPosts['surviving-five-years-in-the-most-dangerous-market']} />
 
         <hr />
 
