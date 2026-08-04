@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PodcastPromo from '@/app/components/PodcastPromo';
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
             <a href="mailto:gareth.macleod@gmail.com">email</a>
           </p>
         </div>
+
+        <PodcastPromo />
 
         <hr />
 
