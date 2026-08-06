@@ -4,6 +4,9 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Gareth MacLeod',
   description: 'Personal website and blog.',
+  alternates: {
+    types: { 'application/rss+xml': '/feed.xml' },
+  },
 };
 
 export default function RootLayout({

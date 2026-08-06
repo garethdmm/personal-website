@@ -25,6 +25,8 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/garethmacleod/" target="_blank">linkedin</a>
             {' · '}
             <a href="mailto:gareth.macleod@gmail.com">email</a>
+            {' · '}
+            <a href="/feed.xml">rss</a>
           </p>
         </div>
 
