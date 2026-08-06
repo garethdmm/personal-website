@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Gareth MacLeod</title>
+    <link>https://garethdmm.com/</link>
+    <description>Essays on startups, engineering, and whatever else.</description>
+    <language>en</language>
+    <item>
+      <title>It's the money, silly</title>
+      <link>https://garethdmm.com/blog/its-the-money-silly</link>
+      <guid>https://garethdmm.com/blog/its-the-money-silly</guid>
+      <pubDate>01 Nov 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>I worked with a man who faked his own death</title>
+      <link>https://garethdmm.com/blog/i-worked-with-a-man-who-faked-his-own-death</link>
+      <guid>https://garethdmm.com/blog/i-worked-with-a-man-who-faked-his-own-death</guid>
+      <pubDate>01 Jun 2024 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to feel when your startup feels easy</title>
+      <link>https://garethdmm.com/blog/how-to-feel-when-your-startup-feels-easy</link>
+      <guid>https://garethdmm.com/blog/how-to-feel-when-your-startup-feels-easy</guid>
+      <pubDate>01 Mar 2024 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Thriving in the presence of risk — Crypto 2013–17</title>
+      <link>https://garethdmm.com/blog/surviving-five-years-in-the-most-dangerous-market</link>
+      <guid>https://garethdmm.com/blog/surviving-five-years-in-the-most-dangerous-market</guid>
+      <pubDate>01 Aug 2019 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
