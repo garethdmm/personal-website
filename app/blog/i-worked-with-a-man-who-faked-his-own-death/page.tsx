@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import { postMetadata } from '@/lib/postMetadata';
 
-export const metadata = {
-  title: 'I worked with a man who faked his own death — Gareth MacLeod',
-};
+export const metadata = postMetadata({
+  slug: 'i-worked-with-a-man-who-faked-his-own-death',
+  title: 'I worked with a man who faked his own death',
+  description:
+    'We made a tidy profit trading on Gerald Cotten’s exchange—until the withdrawals stopped. The Quadriga collapse, seen from inside the market.',
+});
 
 export default function FakedDeathPost() {
   return (

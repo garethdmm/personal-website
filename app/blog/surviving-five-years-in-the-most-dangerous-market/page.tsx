@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import { postMetadata } from '@/lib/postMetadata';
 
-export const metadata = {
-  title: 'Thriving in the presence of risk — Crypto 2013–17 — Gareth MacLeod',
-};
+export const metadata = postMetadata({
+  slug: 'surviving-five-years-in-the-most-dangerous-market',
+  title: 'Thriving in the presence of risk — Crypto 2013–17',
+  description:
+    'In early crypto the half-life of a startup was six months. How Tinker survived five years: focus on your fears and make them specific.',
+});
 
 export default function SurvivingFiveYearsPost() {
   return (
