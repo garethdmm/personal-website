@@ -37,25 +37,25 @@ export default function Home() {
           </h2>
           <ul className="list-none p-0 m-0">
             <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/blog/its-the-money-silly" className="flex-1">
+              <Link href="/writing/its-the-money-silly" className="flex-1">
                 It's the money, silly
               </Link>
               <span className="shrink-0">Nov 2025</span>
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/blog/i-worked-with-a-man-who-faked-his-own-death" className="flex-1">
+              <Link href="/writing/i-worked-with-a-man-who-faked-his-own-death" className="flex-1">
                 I worked with a man who faked his own death
               </Link>
               <span className="shrink-0">Jun 2024</span>
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/blog/how-to-feel-when-your-startup-feels-easy" className="flex-1">
+              <Link href="/writing/how-to-feel-when-your-startup-feels-easy" className="flex-1">
                 How to feel when your startup feels easy
               </Link>
               <span className="shrink-0">Mar 2024</span>
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/blog/surviving-five-years-in-the-most-dangerous-market" className="flex-1">
+              <Link href="/writing/surviving-five-years-in-the-most-dangerous-market" className="flex-1">
                 Thriving in the presence of risk — Crypto 2013–17
               </Link>
               <span className="shrink-0">Aug 2019</span>
