@@ -21,7 +21,7 @@ export function postMetadata(post: {
       title: post.title,
       description: post.description,
       siteName: AUTHOR,
-      url: `/blog/${post.slug}`,
+      url: `/writing/${post.slug}`,
       images: [{ url: image, width: 2400, height: 1260, alt: post.title }],
     },
     twitter: {
