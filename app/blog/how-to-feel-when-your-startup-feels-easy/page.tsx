@@ -10,8 +10,8 @@ export default function HowToFeelPost() {
 
       {/* Running head */}
       <header className="mb-14">
-        <Link href="/" className="caps no-underline text-[0.85rem]">
-          Gareth MacLeod
+        <Link href="/" className="no-underline text-[0.95rem]">
+          gareth macleod
         </Link>
       </header>
 

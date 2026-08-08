@@ -60,9 +60,10 @@ p {
 }
 
 /*
- * Letterspaced capitals: the only heading treatment on the site. Real uppercase
- * glyphs, not font-variant small caps — system Georgia has no true small caps,
- * so browsers synthesize them by shrinking capitals, which thins the strokes
+ * Letterspaced capitals: section labels only, at 0.85rem — never the author's
+ * name, which is set lowercase in the old-web manner. Real uppercase glyphs,
+ * not font-variant small caps — system Georgia has no true small caps, so
+ * browsers synthesize them by shrinking capitals, which thins the strokes
  * and renders gray next to body text.
  */
 .caps {
