@@ -74,10 +74,10 @@ function card({ head, title, line }) {
     margin: 0;
   }
   .title {
-    font-size: 62px;
+    font-size: 80px;
     font-weight: normal;
-    line-height: 1.25;
-    max-width: 950px;
+    line-height: 1.2;
+    max-width: 980px;
     margin: auto 0 0;
     text-wrap: balance;
   }
