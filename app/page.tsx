@@ -62,6 +62,10 @@ export default function Home() {
             </li>
           </ul>
         </section>
+
+        <footer className="mt-16">
+          <p className="m-0"><small>Last updated August 2026</small></p>
+        </footer>
       </main>
     </div>
   );
