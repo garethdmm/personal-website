@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import { postMetadata } from '@/lib/postMetadata';
 
-export const metadata = {
-  title: 'How to feel when your startup feels easy — Gareth MacLeod',
-};
+export const metadata = postMetadata({
+  slug: 'how-to-feel-when-your-startup-feels-easy',
+  title: 'How to feel when your startup feels easy',
+  description:
+    'I once took a startup from zero to $1m in daily volume in four months. It felt easy, and that has bothered me ever since.',
+});
 
 export default function HowToFeelPost() {
   return (

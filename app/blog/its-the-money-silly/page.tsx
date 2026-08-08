@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import { postMetadata } from '@/lib/postMetadata';
 
-export const metadata = {
-  title: "It's the money, silly — Gareth MacLeod",
-};
+export const metadata = postMetadata({
+  slug: 'its-the-money-silly',
+  title: "It's the money, silly",
+  description:
+    "Canada's startup gap with Silicon Valley is usually blamed on unambitious culture and talent leaving. The missing explanation is money.",
+});
 
 export default function ItsTheMoneySillyPost() {
   return (
