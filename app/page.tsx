@@ -7,8 +7,8 @@ export default function Home() {
       <main>
         {/* Masthead */}
         <div className="mb-10">
-          <h1 className="caps mt-0 mb-1 text-[1.05rem]">Gareth MacLeod</h1>
-          <p className="italic m-0">Founder · Engineer · Waterloo, Ontario</p>
+          <h1 className="mt-0 mb-1 text-[1.4rem]">gareth macleod</h1>
+          <p className="italic m-0">founder · engineer · waterloo, ontario</p>
         </div>
 
         {/* Bio */}
