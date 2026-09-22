@@ -29,7 +29,7 @@ const PAGES = [
   {
     slug: 'i-worked-with-a-man-who-faked-his-own-death',
     head: 'Gareth MacLeod',
-    title: 'I worked with a man who faked his own death',
+    title: 'I worked with a man who faked his death',
     line: 'June 2024',
   },
   {
