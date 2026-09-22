@@ -17,7 +17,7 @@ export default function Home() {
             I've been building startups since 2010—my own and others—to varying degrees of success. Presently I'm head of engineering at <a href='https://invertbio.com/' target='_blank'>Invert</a>, where we're building AI that can solve bioprocess development.
           </p>
           <p>
-            My career motto is <i>do what others are not</i>.
+            I look for problems where I can make a unique contribution; where something might not get done unless I do it. This impulse has shaped my career.
           </p>
           <p>
             <a href="https://github.com/garethdmm" target="_blank">github</a>
