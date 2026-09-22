@@ -1,5 +1,5 @@
 const description =
-  'The fleuron, a leaf-shaped ornament used by printers since the Renaissance, is a small nod to the care owed to words and their readers.';
+  'The fleuron is a leaf-shaped ornament used by printers since the Renaissance. It means something like: "Made with care for the reader".';
 
 export default function Fleuron() {
   return (
