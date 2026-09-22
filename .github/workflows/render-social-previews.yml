@@ -15,6 +15,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Render cards with the existing generator
         run: node scripts/generate-og.mjs
+      - name: Export generated public preview images for retrieval
+        run: |
+          python3 - <<'PY'
+          import base64, io, pathlib, textwrap, zipfile
+          archive = io.BytesIO()
+          with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
+              for image in sorted(pathlib.Path('public/og').glob('*.png')):
+                  z.write(image, image.name)
+          print('OG_ARCHIVE_START')
+          print('\n'.join(textwrap.wrap(base64.b64encode(archive.getvalue()).decode(), 4096)))
+          print('OG_ARCHIVE_END')
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: social-previews
