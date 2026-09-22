@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Fleuron from '@/app/components/Fleuron';
 import { postMetadata } from '@/lib/postMetadata';
 
 export const metadata = postMetadata({
@@ -25,7 +26,7 @@ export default function SurvivingFiveYearsPost() {
         </h1>
         <p className="m-0 italic">August 2019</p>
 
-        <div className="fleuron" aria-hidden="true">&#10086;</div>
+        <Fleuron />
 
         <p>
           The goal of Tinker was to build the Goldman Sachs of the blockchain-future, and our thesis was

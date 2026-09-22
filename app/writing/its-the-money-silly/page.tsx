@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Fleuron from '@/app/components/Fleuron';
 import { postMetadata } from '@/lib/postMetadata';
 
 export const metadata = postMetadata({
@@ -25,7 +26,7 @@ export default function ItsTheMoneySillyPost() {
         </h1>
         <p className="m-0 italic">November 2025</p>
 
-        <div className="fleuron" aria-hidden="true">&#10086;</div>
+        <Fleuron />
 
         <p>
           People have been talking about the shortcomings of the Canadian tech startup world my whole professional life, with Silicon Valley the bar against which we measure ourselves. With renewed heat on this topic in the tariff era, two problems in particular have received a lot of attention: our <em>unambitious</em> culture, and our constant leakage of good talent <em>to</em> Silicon Valley. Both of these are worth discussing, but as causal explanations for our differences to California, they are weak and incomplete. What is missing from this framework is money.

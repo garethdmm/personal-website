@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Fleuron from '@/app/components/Fleuron';
 import { postMetadata } from '@/lib/postMetadata';
 
 export const metadata = postMetadata({
@@ -25,7 +26,7 @@ export default function FakedDeathPost() {
         </h1>
         <p className="m-0 italic">June 2024</p>
 
-        <div className="fleuron" aria-hidden="true">&#10086;</div>
+        <Fleuron />
 
         <p>
           I only spoke with Gerald Cotten on the phone, but we had substantial business dealings with him for a time. He ran a Canadian exchange with low volume but highly arbitrageable orders. We made a tidy profit trading there and added substantial liquidity to its books, so the relationship benefited both parties.
