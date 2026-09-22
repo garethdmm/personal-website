@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import Fleuron from '@/app/components/Fleuron';
+import Writing from '@/app/components/Writing';
 
 export default function Home() {
   return (
@@ -32,40 +32,10 @@ export default function Home() {
         <Fleuron />
 
         {/* Writing */}
-        <section>
-          <h2 className="caps mt-0 mb-6 text-[0.85rem]">
-            Writing
-          </h2>
-          <ul className="list-none p-0 m-0">
-            <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/writing/its-the-money-silly" className="flex-1">
-                It's the money, silly
-              </Link>
-              <span className="shrink-0">Nov 2025</span>
-            </li>
-            <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/writing/i-worked-with-a-man-who-faked-his-own-death" className="flex-1">
-                I worked with a man who faked his death
-              </Link>
-              <span className="shrink-0">Jun 2024</span>
-            </li>
-            <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/writing/how-to-feel-when-your-startup-feels-easy" className="flex-1">
-                How to feel when your startup feels easy
-              </Link>
-              <span className="shrink-0">Mar 2024</span>
-            </li>
-            <li className="mb-3 flex justify-between items-baseline gap-6">
-              <Link href="/writing/surviving-five-years-in-the-most-dangerous-market" className="flex-1">
-                Thriving in the presence of risk: Crypto 2013–17
-              </Link>
-              <span className="shrink-0">Aug 2019</span>
-            </li>
-          </ul>
-        </section>
+        <Writing />
 
         <footer className="mt-16">
-          <p className="m-0"><small>Last updated August 2026</small></p>
+          <p className="m-0"><small>Last updated September 2026</small></p>
         </footer>
       </main>
     </div>
