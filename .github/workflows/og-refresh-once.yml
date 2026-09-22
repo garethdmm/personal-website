@@ -1,0 +1,35 @@
+name: Refresh renamed essay preview
+
+on:
+  push:
+    branches: ["agent/rename-counterparty-post"]
+    paths: [".github/workflows/og-refresh-once.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: og-refresh-rename-counterparty
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: macos-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/rename-counterparty-post
+          fetch-depth: 1
+      - name: Render with the existing card generator
+        run: |
+          node scripts/generate-og.mjs
+          sips -g pixelWidth -g pixelHeight public/og/i-worked-with-a-man-who-faked-his-own-death.png
+      - name: Commit preview and remove this temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/og/i-worked-with-a-man-who-faked-his-own-death.png
+          git rm .github/workflows/og-refresh-once.yml
+          git commit -m "Regenerate renamed essay preview"
+          git push origin HEAD:agent/rename-counterparty-post
