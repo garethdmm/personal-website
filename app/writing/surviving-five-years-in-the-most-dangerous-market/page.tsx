@@ -3,7 +3,7 @@ import { postMetadata } from '@/lib/postMetadata';
 
 export const metadata = postMetadata({
   slug: 'surviving-five-years-in-the-most-dangerous-market',
-  title: 'Thriving in the presence of risk — Crypto 2013–17',
+  title: 'Thriving in the presence of risk: Crypto 2013–17',
   description:
     'In early crypto the half-life of a startup was six months. How Tinker survived five years: focus on your fears and make them specific.',
 });
@@ -21,7 +21,7 @@ export default function SurvivingFiveYearsPost() {
 
       <main>
         <h1 className="mt-0 mb-1 text-[1.45rem] leading-[1.25] text-balance">
-          Thriving in the presence of risk — Crypto 2013–17
+          Thriving in the presence of risk: Crypto 2013–17
         </h1>
         <p className="m-0 italic">August 2019</p>
 

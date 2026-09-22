@@ -41,7 +41,7 @@ const PAGES = [
   {
     slug: 'surviving-five-years-in-the-most-dangerous-market',
     head: 'Gareth MacLeod',
-    title: 'Thriving in the presence of risk — Crypto 2013–17',
+    title: 'Thriving in the presence of risk: Crypto 2013–17',
     line: 'August 2019',
   },
 ];

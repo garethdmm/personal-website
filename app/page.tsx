@@ -56,7 +56,7 @@ export default function Home() {
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-6">
               <Link href="/writing/surviving-five-years-in-the-most-dangerous-market" className="flex-1">
-                Thriving in the presence of risk — Crypto 2013–17
+                Thriving in the presence of risk: Crypto 2013–17
               </Link>
               <span className="shrink-0">Aug 2019</span>
             </li>
