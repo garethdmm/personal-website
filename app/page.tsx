@@ -44,7 +44,7 @@ export default function Home() {
             </li>
             <li className="mb-3 flex justify-between items-baseline gap-6">
               <Link href="/writing/i-worked-with-a-man-who-faked-his-own-death" className="flex-1">
-                I worked with a man who faked his own death
+                I worked with a man who faked his death
               </Link>
               <span className="shrink-0">Jun 2024</span>
             </li>

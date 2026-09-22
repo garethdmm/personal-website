@@ -3,7 +3,7 @@ import { postMetadata } from '@/lib/postMetadata';
 
 export const metadata = postMetadata({
   slug: 'i-worked-with-a-man-who-faked-his-own-death',
-  title: 'I worked with a man who faked his own death',
+  title: 'I worked with a man who faked his death',
   description:
     'We made a tidy profit trading on Gerald Cotten’s exchange—until the withdrawals stopped. The Quadriga collapse, seen from inside the market.',
 });
@@ -21,7 +21,7 @@ export default function FakedDeathPost() {
 
       <main>
         <h1 className="mt-0 mb-1 text-[1.45rem] leading-[1.25] text-balance">
-          I worked with a man who faked his own death
+          I worked with a man who faked his death
         </h1>
         <p className="m-0 italic">June 2024</p>
 
