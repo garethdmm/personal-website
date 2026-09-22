@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Fleuron from '@/app/components/Fleuron';
 import { postMetadata } from '@/lib/postMetadata';
 
 export const metadata = postMetadata({
@@ -25,7 +26,7 @@ export default function HowToFeelPost() {
         </h1>
         <p className="m-0 italic">March 2024</p>
 
-        <div className="fleuron" aria-hidden="true">&#10086;</div>
+        <Fleuron />
 
         <p>
           I did something hard once: I took my startup from zero to $1m in daily volume in 4 months.

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Fleuron from '@/app/components/Fleuron';
 
 export const metadata = {
   title: 'Page not found — Gareth MacLeod',
@@ -29,7 +30,7 @@ export default function NotFound() {
           Page not found
         </h1>
 
-        <div className="fleuron" aria-hidden="true">&#10086;</div>
+        <Fleuron />
 
         <p>
           There is no page at this address. Perhaps you were looking for

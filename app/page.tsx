@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Fleuron from '@/app/components/Fleuron';
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="fleuron" aria-hidden="true">&#10086;</div>
+        <Fleuron />
 
         {/* Writing */}
         <section>
