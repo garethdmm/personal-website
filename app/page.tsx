@@ -38,6 +38,12 @@ export default function Home() {
           </h2>
           <ul className="list-none p-0 m-0">
             <li className="mb-3 flex justify-between items-baseline gap-6">
+              <Link href="/writing/the-claimed-small-business-gap-is-not-established" className="flex-1">
+                The claimed small-business gap is not established
+              </Link>
+              <span className="shrink-0">Sep 2026</span>
+            </li>
+            <li className="mb-3 flex justify-between items-baseline gap-6">
               <Link href="/writing/its-the-money-silly" className="flex-1">
                 It's the money, silly
               </Link>
@@ -65,7 +71,7 @@ export default function Home() {
         </section>
 
         <footer className="mt-16">
-          <p className="m-0"><small>Last updated August 2026</small></p>
+          <p className="m-0"><small>Last updated September 2026</small></p>
         </footer>
       </main>
     </div>

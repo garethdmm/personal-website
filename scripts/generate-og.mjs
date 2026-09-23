@@ -21,6 +21,12 @@ const PAGES = [
     line: 'Founder · Engineer · Waterloo, Ontario',
   },
   {
+    slug: 'the-claimed-small-business-gap-is-not-established',
+    head: 'Gareth MacLeod',
+    title: 'The claimed small-business gap is not established',
+    line: 'September 2026',
+  },
+  {
     slug: 'its-the-money-silly',
     head: 'Gareth MacLeod',
     title: 'It’s the money, silly',
