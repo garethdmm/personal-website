@@ -32,7 +32,7 @@ export default function Home() {
         <Fleuron />
 
         {/* Writing */}
-        <section>
+        <section className="writing">
           <h2 className="caps mt-0 mb-6 text-[0.85rem]">
             Writing
           </h2>
