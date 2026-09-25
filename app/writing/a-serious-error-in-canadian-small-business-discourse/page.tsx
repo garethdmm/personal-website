@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Blockquote from '@/app/components/Blockquote';
 import Fleuron from '@/app/components/Fleuron';
 import { postMetadata } from '@/lib/postMetadata';
 
@@ -34,9 +35,9 @@ export default function CanadianSmallBusinessPost() {
           Patient zero for the claim seems to be this <a href="https://www.buildcanada.com/memos/reward-the-risk-takers?utm_source=chatgpt.com">Build Canada piece</a>, which uses it to argue for tax cuts.
         </p>
 
-        <blockquote className="my-7 mx-0 pl-6 italic">
+        <Blockquote cite="https://www.buildcanada.com/memos/reward-the-risk-takers">
           <p>We have just 33 small businesses per 1,000 people vs 124 in the US. Fixing our capital gains system could help us close this gap with the US and create hundreds of thousands of new jobs.</p>
-        </blockquote>
+        </Blockquote>
 
         <p>
           The source given for the Canadian side of this comparison is this 2023 ISDE report table which shows 33.6 businesses per 1000 adult population (18+). This report defines it’s subject as <strong>employer SMEs</strong>: a business with at least 1 and less than 500 employees.
