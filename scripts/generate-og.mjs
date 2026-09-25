@@ -23,7 +23,7 @@ const PAGES = [
   {
     slug: 'a-serious-error-in-canadian-small-business-discourse',
     head: 'Gareth MacLeod',
-    title: 'A Serious error in Canadian small business discourse',
+    title: 'A serious error in Canadian small business discourse',
     line: 'September 2026',
   },
   {

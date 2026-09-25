@@ -39,7 +39,7 @@ export default function Home() {
           <ul className="list-none p-0 m-0">
             <li className="mb-3 flex justify-between items-baseline gap-6">
               <Link href="/writing/a-serious-error-in-canadian-small-business-discourse" className="flex-1">
-                A Serious error in Canadian small business discourse
+                A serious error in Canadian small business discourse
               </Link>
               <span className="shrink-0">Sep 2026</span>
             </li>

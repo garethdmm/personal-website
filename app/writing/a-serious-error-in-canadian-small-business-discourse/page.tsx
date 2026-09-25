@@ -4,7 +4,7 @@ import { postMetadata } from '@/lib/postMetadata';
 
 export const metadata = postMetadata({
   slug: 'a-serious-error-in-canadian-small-business-discourse',
-  title: 'A Serious error in Canadian small business discourse',
+  title: 'A serious error in Canadian small business discourse',
   description:
     'A look at the employer and non-employer business counts behind the claimed small-business gap between Canada and the US.',
 });
@@ -20,7 +20,7 @@ export default function CanadianSmallBusinessPost() {
 
       <main>
         <h1 className="mt-0 mb-1 text-[1.45rem] leading-[1.25] text-balance">
-          A Serious error in Canadian small business discourse
+          A serious error in Canadian small business discourse
         </h1>
         <p className="m-0 italic">September 2026</p>
 
@@ -39,11 +39,11 @@ export default function CanadianSmallBusinessPost() {
         </blockquote>
 
         <p>
-          The source given for the Canadian stat here is this 2023 ISDE report table which shows 33.6 businesses per 1000 adult population (18+). This report defines it’s subject as <strong>employer SMEs</strong>: a business with at least 1 and less than 500 employees.
+          The source given for the Canadian side of this comparison is this 2023 ISDE report table which shows 33.6 businesses per 1000 adult population (18+). This report defines it’s subject as <strong>employer SMEs</strong>: a business with at least 1 and less than 500 employees.
         </p>
 
         <p>
-          The US source given by the piece is a broken link, but the data can be found in the US census, or in annual summaries given out by the US Small Business Administration (SBA). The <a href="https://advocacy.sba.gov/wp-content/uploads/2025/06/United_States_2025-State-Profile.pdf#page=4">SBA’s 2025 report</a> gives separate business counts for those with 0, 1-19, and 20-499 employees. Adding the latter two categories together gives you 6374594 employer SMEs in the US. We’ll take the number of adults in the US for the same census year as 260 million. This gives us 24 employer SMEs per 1000 adults in the USA.<sup className="ml-0.5 text-[0.7em]"><a id="census-note-ref" href="#census-note" role="doc-noteref" aria-label="Footnote 1: reconstruct the figures from Census data">1</a></sup>
+          The US source given by the piece is a broken link, but the data can be found in the US census, or in annual summaries given out by the US Small Business Administration (SBA). The <a href="https://advocacy.sba.gov/wp-content/uploads/2025/06/United_States_2025-State-Profile.pdf#page=4">SBA’s 2025 report</a> separates counts for businesses with 0, 1-19, and 20-499 employees. Adding the latter two together gives 6,374,594 employer SMEs in the US. The underlying census year here is 2022, so we’ll take the number of US adults from the same source as 260 million. Dividing through gives us us 24 employer SMEs per 1000 adults in the USA.<sup className="ml-0.5 text-[0.7em]"><a id="census-note-ref" href="#census-note" role="doc-noteref" aria-label="Footnote 1: reconstruct the figures from Census data">1</a></sup>
         </p>
 
         <p>
@@ -51,7 +51,7 @@ export default function CanadianSmallBusinessPost() {
         </p>
 
         <p>
-          I cannot say how Build Canada arrived at their number, but I can hazard a guess. In the SBA table given above, if one were to add together all three categories of SMEs, you would get a number that represents <strong>employer and non-employer SMEs</strong> in the US. This number is 36186089. Divide through by the number of adults in the same census year (2022, 260 million), and you get 138. This is a slightly different number than what was given in the piece, but it’s in the ballpark. The difference could be accounted for by using a slightly different year for population and business stats.
+          I cannot say how Build Canada arrived at their number, but I can hazard a guess. In the SBA table given above, if one were to add together all three categories of SMEs, you would get a number that represents <strong>employer and non-employer SMEs</strong> in the US. This number is 36,186,089. Divide through by the number of adults in the same census year (2022, 260 million), and you get 138. This is close to, but slightly above the number than what was quoted in the piece. The difference could be accounted for by using a slightly different year for population and business stats.
         </p>
 
         <p>
