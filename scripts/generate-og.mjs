@@ -21,6 +21,12 @@ const PAGES = [
     line: 'Founder · Engineer · Waterloo, Ontario',
   },
   {
+    slug: 'a-serious-error-in-canadian-small-business-discourse',
+    head: 'Gareth MacLeod',
+    title: 'A Serious error in Canadian small business discourse',
+    line: 'September 2026',
+  },
+  {
     slug: 'its-the-money-silly',
     head: 'Gareth MacLeod',
     title: 'It’s the money, silly',
