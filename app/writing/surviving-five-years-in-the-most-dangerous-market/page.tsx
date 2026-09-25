@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Blockquote from '@/app/components/Blockquote';
 import Fleuron from '@/app/components/Fleuron';
 import { postMetadata } from '@/lib/postMetadata';
 
@@ -107,7 +108,7 @@ export default function SurvivingFiveYearsPost() {
           up with a quick summary:
         </p>
 
-        <blockquote className="my-7 mx-0 pl-6 italic">
+        <Blockquote>
           <p className="mt-0 mx-0 mb-3">
             In any domain that contains extreme events, it is a mistake to bank your survival on your
             ability to precisely predict and avoid those events. Our knowledge of the world is imperfect,
@@ -118,7 +119,7 @@ export default function SurvivingFiveYearsPost() {
             happen, and structure our systems such that they can survive, absorb, and even grow in their
             presence.
           </p>
-        </blockquote>
+        </Blockquote>
 
         <p>
           Applying this to our situation, we decided that the only way we could build this company was if
