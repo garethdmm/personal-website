@@ -37,8 +37,24 @@ export default function WhyIQuitCryptoPost() {
 
         <Fleuron />
 
-        {/* Replace this placeholder with the essay as it takes shape. */}
-        <p className="italic">Draft in progress.</p>
+        {/* Working summary to expand into the essay. */}
+        <ul className="list-disc pl-6 space-y-4">
+          <li>
+            I entered bitcoin in 2013 hoping to help build a more transparent and accountable financial system, and helped build Tinker into a cryptocurrency trading business.
+          </li>
+          <li>
+            After my cofounders left in 2016, I stayed for the trading research and financial opportunity, but my search for useful applications increasingly turned up speculation and hype.
+          </li>
+          <li>
+            I came to see crypto as a political project that would put property and commerce beyond democratic control, and realized I did not want to build that future.
+          </li>
+          <li>
+            With $1 million in Tinker’s bank account and what I believed was a solid shot at life-changing wealth, I chose in early 2018 to wind it down and release its trading code as Gryphon.
+          </li>
+          <li>
+            I still wonder whether I should have made the money and used it for good, but the experience taught me to trust my own judgment about what is worth building.
+          </li>
+        </ul>
       </main>
     </div>
   );
