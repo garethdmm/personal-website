@@ -38,6 +38,12 @@ export default function Home() {
           </h2>
           <ul className="list-none p-0 m-0">
             <li className="mb-3 flex justify-between items-baseline gap-6">
+              <Link href="/writing/why-i-quit-crypto" className="flex-1">
+                Why I quit Crypto
+              </Link>
+              <span className="shrink-0 italic">Draft</span>
+            </li>
+            <li className="mb-3 flex justify-between items-baseline gap-6">
               <Link href="/writing/its-the-money-silly" className="flex-1">
                 It's the money, silly
               </Link>
