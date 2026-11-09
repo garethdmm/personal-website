@@ -40,7 +40,7 @@ export default function WhyIQuitCryptoPost() {
         {/* Working summary to expand into the essay. */}
         <ul className="list-disc pl-6 space-y-4">
           <li>
-            I entered bitcoin in 2013 hoping to help build a more transparent and accountable financial system, and helped build Tinker into a cryptocurrency trading business.
+            I entered bitcoin in 2013 hoping to build a more accountable financial system, and six months after focusing on algorithmic trading in March 2014, Tinker was trading about $5 million a day and handling 15% of daily volume on regulated USD exchanges.
           </li>
           <li>
             After my cofounders left in 2016, I stayed for the trading research and financial opportunity, but my search for useful applications increasingly turned up speculation and hype.
