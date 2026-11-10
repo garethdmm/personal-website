@@ -39,7 +39,7 @@ export default function Home() {
           <ul className="list-none p-0 m-0">
             <li className="mb-3 flex justify-between items-baseline gap-6">
               <Link href="/writing/why-i-quit-crypto" className="flex-1">
-                Why I quit Crypto
+                The future I thought we were building
               </Link>
               <span className="shrink-0">Nov 2026</span>
             </li>
